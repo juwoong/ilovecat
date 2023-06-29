@@ -7,14 +7,10 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,6 +23,29 @@
 .App-link {
   color: #61dafb;
 }
+
+h2 {
+  color: black;
+  margin-bottom: 0%;
+}
+
+h1 {
+  margin-top: 0%;
+  animation-duration: 3s;
+  animation-name: rainbowLink;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbowLink {     
+  0% { color: #ff2a2a; }
+  15% { color: #ff7a2a; }
+  30% { color: #ffc52a; }
+  45% { color: #43ff2a; }
+  60% { color: #2a89ff; }
+  75% { color: #202082; }
+  90% { color: #6b2aff; } 
+  100% { color: #e82aff; }
+ }
 
 @keyframes App-logo-spin {
   from {
